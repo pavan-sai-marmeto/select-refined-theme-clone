@@ -1,0 +1,115 @@
+<script src={{ "custom-splide-slider.js" | asset_url}} defer></script>
+<script src="custom-product-card.js" defer></script>
+
+
+{% style %}
+  .padding-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
+  }
+
+  @media (min-width: 750px) {
+    .padding-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="product-list padding-{{ section.id }}">
+  <div class="page-width">
+    {% if section.settings.section_heading != blank %}
+      <h2 class="product-list__heading">{{ section.settings.section_heading }}</h2>
+    {% endif %}
+
+    <custom-splide-slider options='{"type": "loop", "perPage": 4, "gap": 20}'>
+        <section class="splide" aria-label="Splide Basic HTML Example" >
+            <div class="splide__track">
+                  <ul class="splide__list">
+                    {% for product in section.settings.product_list %}
+                        <li class="splide__slide">
+                        <div>
+                          {% render 'custom-product-card', product: product, section_id: section.id %}
+                        </div>
+                        </li>
+                      {% else %}
+                        {% for i in (1..5) %}
+                            <li class="splide__slide">
+                          <div class="grid__item">
+                            <div class="media media--square">
+                              {{ 'product-' | append: i | placeholder_svg_tag }}
+                            </div>
+                          </div>
+                        </li>
+                        {% endfor %}
+                      {% endfor %}
+                  </ul>
+            </div>
+          </section>
+    </custom-splide-slider>
+    
+  </div>
+</div>
+
+<script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    " ></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">
+
+{% comment %} <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet"> {% endcomment %}
+
+
+{% schema %}
+  {
+    "name": "Custom product list",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "section_heading",
+        "label": "Section heading",
+        "default": "Individual Styles Redefined"
+      },
+      {
+        "type": "product_list",
+        "id": "product_list",
+        "label": "Products",
+        "limit": 12
+      },
+      {
+        "type": "header",
+        "content": "Section padding"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 36
+      }
+    ],
+    "presets": [{
+        "name": "Custom product list"
+    }]
+  }
+{% endschema %}

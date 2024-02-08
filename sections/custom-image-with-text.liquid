@@ -1,0 +1,207 @@
+{{ 'custom-image-with-text.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+  .padding-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
+    }
+
+    .cutome-image-with-text__heading{
+      color : {{ section.settings.heading_color }};
+    }
+
+    .cutome-image-with-text__description p {
+      color: {{ section.settings.description_color }};
+    }
+
+    @media (min-width: 750px) {
+      .cutome-image-with-text__content-container{
+        justify-content : {{ section.settings.vertical_alignment }};
+        padding-left : {{ section.settings.content_padding }}px;
+      }
+    }
+{% endstyle %}
+
+<div class="custom-image-with-text padding-{{ section.id }}">
+  <div class="page-width">
+    <div class="custome-image-with-text__main-section">
+      <div class="cutome-image-with-text__image-container">
+        {% if section.settings.desktop_image != blank and section.settings.mobile_image != blank %}
+          {% render 'responsive-picture',
+            desktopImage: section.settings.desktop_image,
+            mobileImage: section.settings.mobile_image
+          %}
+        {% else %}
+          {{ '' }}
+        {% endif %}
+      </div>
+      <div class="cutome-image-with-text__content-container">
+        <div>
+          {%- if section.settings.heading != blank -%}
+            <a
+              {% if section.settings.heading_link == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ section.settings.heading_link }}"
+              {% endif %}
+            >
+              <h2 class="h2 cutome-image-with-text__heading">{{ section.settings.heading }}</h2>
+            </a>
+          {%- endif -%}
+
+          {% if section.settings.description != blank %}
+            <div class="cutome-image-with-text__description">{{ section.settings.description }}</div>
+          {% endif %}
+
+          <div class="button--tag">
+            {% if section.settings.button_one_lebel != blank %}
+              <a
+                {% if section.settings.button_one_link == blank %}
+                  role="link" aria-disabled="true"
+                {% else %}
+                  href="{{ section.settings.button_one_link }}"
+                {% endif %}
+              >
+                <span>{{ section.settings.button_one_lebel }}</span>
+              </a>
+            {% endif %}
+            {% if section.settings.button_two_lebel != blank %}
+              <a
+                {% if section.settings.button_two_link == blank %}
+                  role="link" aria-disabled="true"
+                {% else %}
+                  href="{{ section.settings.button_two_link }}"
+                {% endif %}
+              >
+                <span>{{ section.settings.button_two_lebel }}</span>
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "cutome-image-with-text",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Upload Images"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "header",
+      "content": "Add Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Content Heading",
+      "default": "Wear the Story of Every Moment with Distinction"
+    },
+    {
+      "type": "text",
+      "id": "heading_link",
+      "label": "Heading Link"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#181818"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Content Description",
+      "default": "<p>Each piece speaks of moments lived, memories made, and a future of distinction.</p>"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description Color",
+      "default": "#838282"
+    },
+    {
+      "type": "text",
+      "id": "button_one_lebel",
+      "label": "Button One Text",
+      "default": "SHOP SHIRTS"
+    },
+    {
+      "type": "url",
+      "id": "button_one_link",
+      "label": "Button One Link"
+    },
+    {
+      "type": "text",
+      "id": "button_two_lebel",
+      "label": "Button Two Text",
+      "default": "SHOP TOPS"
+    },
+    {
+      "type": "url",
+      "id": "button_two_link",
+      "label": "Button Two Link"
+    },
+    {
+      "type": "select",
+      "id": "vertical_alignment",
+      "label": "Vertical alignment",
+      "options": [
+        {
+          "value": "start",
+          "label": "Top"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "end",
+          "label": "Bottom"
+        }
+      ],
+      "default": "end"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Section Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Section Padding bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "cutome-image-with-text"
+    }
+  ]
+}
+{% endschema %}
