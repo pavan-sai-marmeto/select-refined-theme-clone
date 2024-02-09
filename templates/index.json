@@ -105,7 +105,7 @@
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "",
@@ -204,12 +204,59 @@
             "desktop_image": "shopify:\/\/shop_images\/Johnson_Berg.svg",
             "brand_link": ""
           }
+        },
+        "slide_Q7CQn4": {
+          "type": "slide",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Helen_Smith.svg",
+            "brand_link": ""
+          }
+        },
+        "slide_44remW": {
+          "type": "slide",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Bart_e2ec285e-2155-4401-b91b-653a61c5f216.svg",
+            "brand_link": "#"
+          }
+        },
+        "slide_pwQMn4": {
+          "type": "slide",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/SC.svg",
+            "brand_link": ""
+          }
+        },
+        "slide_w34azp": {
+          "type": "slide",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/CROWN.svg",
+            "brand_link": "#"
+          }
+        },
+        "slide_fkjm6G": {
+          "type": "slide",
+          "settings": {
+            "brand_link": ""
+          }
+        },
+        "slide_7BaxjT": {
+          "type": "slide",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Ward_Allen.svg",
+            "brand_link": ""
+          }
         }
       },
       "block_order": [
         "slide_tWEKpd",
         "slide_LPAjhn",
-        "slide_YYbBxA"
+        "slide_YYbBxA",
+        "slide_Q7CQn4",
+        "slide_44remW",
+        "slide_pwQMn4",
+        "slide_w34azp",
+        "slide_fkjm6G",
+        "slide_7BaxjT"
       ],
       "settings": {
         "section_heading": "FEATURED BRANDS",
