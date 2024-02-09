@@ -116,30 +116,67 @@
         "padding_bottom": 36
       }
     },
-    "featured_collection_MxarpA": {
-      "type": "featured-collection",
+    "image_banner_pQyNAk": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_tFrKp6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Limited Time Only.",
+            "heading_size": "h2"
+          }
+        },
+        "text_y4iBQY": {
+          "type": "text",
+          "settings": {
+            "text": "The Sale is Coming to a Close Soon",
+            "text_style": "body"
+          }
+        },
+        "buttons_mWwxg3": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "#",
+            "button_style_secondary_1": true,
+            "button_label_2": "Button label",
+            "button_link_2": "#",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_tFrKp6",
+        "text_y4iBQY",
+        "buttons_mWwxg3"
+      ],
       "settings": {
-        "title": "Individual Styles Redefined",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "tops",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": true,
-        "show_rating": true,
-        "enable_quick_add": true,
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
+        "image": "shopify:\/\/shop_images\/image_1_59a13903-0846-475c-a1e5-bea376b029c8.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "custom_products_slider_Q4UcJd": {
+      "type": "custom-products-slider",
+      "settings": {
+        "section_heading": "Individual Styles Redefined",
+        "product_list": [
+          "august-rib-wool-oak",
+          "black-stripe-spring-oxford-shirt",
+          "highland-tee-white",
+          "highland-tee-worn-black",
+          "jude-navy-chevron-shirt",
+          "lean-dean-dry-gentle-worn",
+          "lean-dean-plain-stone"
+        ],
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -149,6 +186,7 @@
     "image_banner",
     "featured_collection",
     "image_with_text_q8hUcx",
-    "featured_collection_MxarpA"
+    "image_banner_pQyNAk",
+    "custom_products_slider_Q4UcJd"
   ]
 }
