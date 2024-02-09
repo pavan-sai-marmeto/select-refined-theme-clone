@@ -263,6 +263,60 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "custom_collections_list_ChN6Me": {
+      "type": "custom-collections-list",
+      "blocks": {
+        "slide_UdEi8h": {
+          "type": "slide",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/07-shirts-hover_d61d5ae1-e648-4ba6-8b4a-f358fdbe30ef.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/07-shirts-hover_d61d5ae1-e648-4ba6-8b4a-f358fdbe30ef.jpg",
+            "collection_title": "Shirts",
+            "collection_title_link": "#"
+          }
+        },
+        "slide_G4Vwi3": {
+          "type": "slide",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/05-t_shirts-hover.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/05-t_shirts-hover.jpg",
+            "collection_title": "T-shirts",
+            "collection_title_link": ""
+          }
+        },
+        "slide_7MFaxy": {
+          "type": "slide",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/07-bottoms-hover.webp",
+            "mobile_image": "shopify:\/\/shop_images\/07-bottoms-hover.jpg",
+            "collection_title": "Bottoms",
+            "collection_title_link": ""
+          }
+        },
+        "slide_YLRiji": {
+          "type": "slide",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/04-tops-hover.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/04-tops-hover.jpg",
+            "collection_title": "Tops",
+            "collection_title_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "slide_UdEi8h",
+        "slide_G4Vwi3",
+        "slide_7MFaxy",
+        "slide_YLRiji"
+      ],
+      "settings": {
+        "section_heading": "Shop by Categories",
+        "show_all_text": "See All",
+        "show_all_button_link": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -271,6 +325,7 @@
     "image_with_text_q8hUcx",
     "custom_products_slider_Q4UcJd",
     "image_banner_pQyNAk",
-    "custom_brands_aNXPQC"
+    "custom_brands_aNXPQC",
+    "custom_collections_list_ChN6Me"
   ]
 }
