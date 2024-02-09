@@ -190,10 +190,26 @@
             "desktop_image": "shopify:\/\/shop_images\/Amiga.svg",
             "brand_link": "#"
           }
+        },
+        "slide_LPAjhn": {
+          "type": "slide",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Stela.svg",
+            "brand_link": "#"
+          }
+        },
+        "slide_YYbBxA": {
+          "type": "slide",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Johnson_Berg.svg",
+            "brand_link": ""
+          }
         }
       },
       "block_order": [
-        "slide_tWEKpd"
+        "slide_tWEKpd",
+        "slide_LPAjhn",
+        "slide_YYbBxA"
       ],
       "settings": {
         "section_heading": "FEATURED BRANDS",
