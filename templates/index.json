@@ -116,6 +116,23 @@
         "padding_bottom": 36
       }
     },
+    "custom_products_slider_Q4UcJd": {
+      "type": "custom-products-slider",
+      "settings": {
+        "section_heading": "Individual Styles Redefined",
+        "product_list": [
+          "august-rib-wool-oak",
+          "black-stripe-spring-oxford-shirt",
+          "highland-tee-white",
+          "highland-tee-worn-black",
+          "jude-navy-chevron-shirt",
+          "lean-dean-dry-gentle-worn",
+          "lean-dean-plain-stone"
+        ],
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_banner_pQyNAk": {
       "type": "image-banner",
       "blocks": {
@@ -164,19 +181,22 @@
         "show_text_below": true
       }
     },
-    "custom_products_slider_Q4UcJd": {
-      "type": "custom-products-slider",
+    "custom_brands_aNXPQC": {
+      "type": "custom-brands",
+      "blocks": {
+        "slide_tWEKpd": {
+          "type": "slide",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Amiga.svg",
+            "brand_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "slide_tWEKpd"
+      ],
       "settings": {
-        "section_heading": "Individual Styles Redefined",
-        "product_list": [
-          "august-rib-wool-oak",
-          "black-stripe-spring-oxford-shirt",
-          "highland-tee-white",
-          "highland-tee-worn-black",
-          "jude-navy-chevron-shirt",
-          "lean-dean-dry-gentle-worn",
-          "lean-dean-plain-stone"
-        ],
+        "section_heading": "FEATURED BRANDS",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -186,7 +206,8 @@
     "image_banner",
     "featured_collection",
     "image_with_text_q8hUcx",
+    "custom_products_slider_Q4UcJd",
     "image_banner_pQyNAk",
-    "custom_products_slider_Q4UcJd"
+    "custom_brands_aNXPQC"
   ]
 }
