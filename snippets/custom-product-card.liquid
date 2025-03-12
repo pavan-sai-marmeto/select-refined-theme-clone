@@ -10,7 +10,7 @@
     data-product-handle="{{ product.handle }}" 
     data-section-id="{{ section_id }}"
   >
-    <p>variant availability count: {{ current_variant.custom.test111.value }}</p>
+    <p>variant availability count: {{ current_variant.custom.test111 | json }}</p>
     <a href="{{ product.url }}" class="product-card__link">
       <div class="media media--square media--transparent media--hover-effect">
         <img
