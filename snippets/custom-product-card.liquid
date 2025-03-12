@@ -10,9 +10,6 @@
     data-product-handle="{{ product.handle }}" 
     data-section-id="{{ section_id }}"
   >
-    {% for each in product.variants %}
-      <p>{{ each.metafields.custom.test111.value | times: 3 }}</p>
-    {% endfor %}
     <a href="{{ product.url }}" class="product-card__link">
       <div class="media media--square media--transparent media--hover-effect">
         <img
