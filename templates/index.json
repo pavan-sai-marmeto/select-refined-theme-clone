@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_banner": {
@@ -14,7 +23,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -82,7 +91,7 @@
         "text_xTcfbE": {
           "type": "text",
           "settings": {
-            "text": "<p>Each piece speaks of moments lived, memories made, and a future of distinction.<\/p>",
+            "text": "<p>Each piece speaks of moments lived, memories made, and a future of distinction.</p>",
             "text_style": "body"
           }
         },
@@ -90,7 +99,7 @@
           "type": "button",
           "settings": {
             "button_label": "SHOP SHIRTS",
-            "button_link": "shopify:\/\/collections\/shirts",
+            "button_link": "shopify://collections/shirts",
             "button_style_secondary": false
           }
         }
@@ -101,7 +110,7 @@
         "button_3cbiJE"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/hero-image.webp",
+        "image": "shopify://shop_images/hero-image.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -121,6 +130,7 @@
       "settings": {
         "section_heading": "Individual Styles Redefined",
         "product_list": [
+          "men-winter-jacket",
           "august-rib-wool-oak",
           "black-stripe-spring-oxford-shirt",
           "highland-tee-white",
@@ -168,7 +178,7 @@
         "buttons_mWwxg3"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/image_1_59a13903-0846-475c-a1e5-bea376b029c8.jpg",
+        "image": "shopify://shop_images/image_1_59a13903-0846-475c-a1e5-bea376b029c8.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -187,49 +197,49 @@
         "slide_tWEKpd": {
           "type": "slide",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Amiga.svg",
+            "desktop_image": "shopify://shop_images/Amiga.svg",
             "brand_link": "#"
           }
         },
         "slide_LPAjhn": {
           "type": "slide",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Stela.svg",
+            "desktop_image": "shopify://shop_images/Stela.svg",
             "brand_link": "#"
           }
         },
         "slide_YYbBxA": {
           "type": "slide",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Johnson_Berg.svg",
+            "desktop_image": "shopify://shop_images/Johnson_Berg.svg",
             "brand_link": ""
           }
         },
         "slide_Q7CQn4": {
           "type": "slide",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Helen_Smith.svg",
+            "desktop_image": "shopify://shop_images/Helen_Smith.svg",
             "brand_link": ""
           }
         },
         "slide_44remW": {
           "type": "slide",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Bart_e2ec285e-2155-4401-b91b-653a61c5f216.svg",
+            "desktop_image": "shopify://shop_images/Bart_e2ec285e-2155-4401-b91b-653a61c5f216.svg",
             "brand_link": "#"
           }
         },
         "slide_pwQMn4": {
           "type": "slide",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/SC.svg",
+            "desktop_image": "shopify://shop_images/SC.svg",
             "brand_link": ""
           }
         },
         "slide_w34azp": {
           "type": "slide",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/CROWN.svg",
+            "desktop_image": "shopify://shop_images/CROWN.svg",
             "brand_link": "#"
           }
         },
@@ -242,7 +252,7 @@
         "slide_7BaxjT": {
           "type": "slide",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Ward_Allen.svg",
+            "desktop_image": "shopify://shop_images/Ward_Allen.svg",
             "brand_link": ""
           }
         }
@@ -270,8 +280,8 @@
         "slide_UdEi8h": {
           "type": "slide",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/07-shirts-hover_d61d5ae1-e648-4ba6-8b4a-f358fdbe30ef.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/07-shirts-hover_d61d5ae1-e648-4ba6-8b4a-f358fdbe30ef.jpg",
+            "desktop_image": "shopify://shop_images/07-shirts-hover_d61d5ae1-e648-4ba6-8b4a-f358fdbe30ef.jpg",
+            "mobile_image": "shopify://shop_images/07-shirts-hover_d61d5ae1-e648-4ba6-8b4a-f358fdbe30ef.jpg",
             "collection_title": "Shirts",
             "collection_title_link": "#"
           }
@@ -279,8 +289,8 @@
         "slide_G4Vwi3": {
           "type": "slide",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/05-t_shirts-hover.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/05-t_shirts-hover.jpg",
+            "desktop_image": "shopify://shop_images/05-t_shirts-hover.jpg",
+            "mobile_image": "shopify://shop_images/05-t_shirts-hover.jpg",
             "collection_title": "T-shirts",
             "collection_title_link": ""
           }
@@ -288,8 +298,8 @@
         "slide_7MFaxy": {
           "type": "slide",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/07-bottoms-hover.webp",
-            "mobile_image": "shopify:\/\/shop_images\/07-bottoms-hover.jpg",
+            "desktop_image": "shopify://shop_images/07-bottoms-hover.webp",
+            "mobile_image": "shopify://shop_images/07-bottoms-hover.jpg",
             "collection_title": "Bottoms",
             "collection_title_link": ""
           }
@@ -297,8 +307,8 @@
         "slide_YLRiji": {
           "type": "slide",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/04-tops-hover.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/04-tops-hover.jpg",
+            "desktop_image": "shopify://shop_images/04-tops-hover.jpg",
+            "mobile_image": "shopify://shop_images/04-tops-hover.jpg",
             "collection_title": "Tops",
             "collection_title_link": "#"
           }
