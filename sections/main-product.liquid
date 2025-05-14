@@ -75,6 +75,7 @@
     </div>
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       {% assign pdp_recipes = product.metafields.custom.pdp_recipes.value %}
+      <p class="sai">{{ pdp_recipes | json }}</p>
       {% for each in pdp_recipes %}
       <p class="pavan">{{ each.recipe_created_date_and_time.vale }}</p>
       <p>{{ each.pdp_recipe_duration.vale }}</p>
