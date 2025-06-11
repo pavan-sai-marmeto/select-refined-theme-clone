@@ -294,6 +294,8 @@
     {% sections 'header-group' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+      <p>Test {{ product.metafields.custom.test_richtext.value.ans | metafield_tag }}</p>
+      <p>Test2 {{ product.metafields.custom.test_richtext.value.ans | metafield_text }}</p>
       {{ content_for_layout }}
     </main>
 
